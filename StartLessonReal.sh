@@ -12,8 +12,8 @@ git push origin main
 echo "enter name of new branch"
 read branchName
 
-git branch $branchName
-git checkout $branchName
+git branch "$branchName"
+git checkout "$branchName"
 
 eval "$(conda shell.bash hook)"
 
@@ -26,5 +26,5 @@ jupyter notebook
 git add .
 git commit 
 git remote -v
-git push origin $branchName
+git push origin "$branchName"
 
